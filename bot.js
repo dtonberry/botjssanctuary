@@ -1,6 +1,4 @@
 const { Client, Intents, MessageEmbed, DiscordAPIError, MessageActionRow, Message, MessageButton, MessageSelectMenu } = require('discord.js');
-const { token } = require('./config.json');
-const { xivapi_key } = require('./config.json');
 const hmtai = require('hmtai');
 const Nuggies = require('nuggies');
 
@@ -11,6 +9,8 @@ let client = new Client({ intents: [Intents.FLAGS.GUILDS] });
 client.once('ready', () => {
     console.log('Ready');
 });
+
+const token = process.env.TOKEN;
 
 //login with the bot
 client.login(token);
