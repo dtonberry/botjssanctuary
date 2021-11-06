@@ -13,7 +13,7 @@ client.once('ready', () => {
 });
 
 //login with the bot
-client.login(token);
+client.login(os.environ["TOKEN"]);
 
 //do a command or something
 
