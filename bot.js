@@ -13,7 +13,7 @@ client.once('ready', () => {
 const token = process.env.TOKEN;
 
 //login with the bot
-client.login(os.environ["TOKEN"]);
+client.login(token);
 
 //do a command or something
 
